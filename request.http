@@ -1,0 +1,11 @@
+### 登录测试
+POST http://localhost:7890/login
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "admin"
+}
+###
+GET http://localhost:7890/afterlogin HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNjY2NzQ3ODUzLCJleHAiOjE2NjY3NTE0NTN9.yELPP_JnFdLx-gtureSYd-pccoSjLCru5Ti6XKVXDlo
