@@ -85,6 +85,29 @@ course.save().then(r => {
 
 */
 
+/* 删除
+
+查询到符合条件的第一个文档,将其删除并且返回
+Course.findOneAndDelete({}).then(result=>{console.log(result)})
+
+删除多个符合条件的文档
+条件为空则清空所有文档
+Course.deleteMany({}).then(result=>{console.log(result)})
+
+*/
+
+/* 更新
+
+更新单个文档
+Course.updateOne({条件},{updateKey:updateValue}).then(result=>{console.log(result)})
+
+更新多个文档
+条件为空则更新所有文档
+Course.updateMany({条件},{updateKey:updateValue}).then(result=>{console.log(result)})
+
+
+ */
+
 /* 查询
 
 使用该集合的find()来查询集合中的所有文档
@@ -137,27 +160,3 @@ Course.find().skip(2).limit(2).then(result => {
 
 
 */
-
-/* 删除
-
-查询到符合条件的第一个文档,将其删除并且返回
-Course.findOneAndDelete({}).then(result=>{console.log(result)})
-
-删除多个符合条件的文档
-条件为空则清空所有文档
-Course.deleteMany({}).then(result=>{console.log(result)})
-
-*/
-
-/* 更新
-
-更新单个文档
-Course.updateOne({条件},{updateKey:updateValue}).then(result=>{console.log(result)})
-
-更新多个文档
-条件为空则更新所有文档
-Course.updateMany({条件},{updateKey:updateValue}).then(result=>{console.log(result)})
-
-
- */
-
